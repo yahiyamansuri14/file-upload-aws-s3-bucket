@@ -31,7 +31,7 @@ app.post('/fileupload', async (req, res) => {
         } else {
             const uploadFileContent = fs.readFileSync(uploadPath)
             const params = {
-                Bucket: 'geeksdoor-mern-jan-21',
+                Bucket: 'YOUR BUCKET NAME',
                 Key: fileName, // File name you want to save as in S3
                 Body: uploadFileContent,
                 ACL: 'public-read'//give access to public to read file
